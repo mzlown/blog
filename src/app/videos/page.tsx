@@ -1,10 +1,12 @@
 import Header from "../../components/header";
-const BlogPage = () => {
+
+const VideosPage = () => {
     return (
         <div>
             <Header />
+            <h1>Videos</h1>
         </div>
     )
 };
 
-export default BlogPage;
+export default VideosPage;

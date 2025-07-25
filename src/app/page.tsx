@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Header from "../components/header";
+
 export default function Home() {
   return (
     <div>
-      <h1>Zoe's website</h1>
-      <Link href="/blog">Blog</Link>
+      <Header />
+      <h1>Blog</h1>
     </div>
   );
 }
