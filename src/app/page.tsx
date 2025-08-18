@@ -13,20 +13,20 @@ export default async function Home() {
   const posts = await Promise.all(postSlugs.map((slug) => getPostBySlug(slug)));
 
   return (
-    <div className="bg-[#7ca982] px-[16px] py-[16px]">
+    <div className="bg-[#f1f1f1] px-[16px] py-[16px]">
       <div className="flex flex-col gap-[8px] m-auto justify-center items-center mb-[24px]">
         <h1>Welcome to Trail Snackers</h1>
         <p>Where you come on adventures with me!</p>
         <h3>Recommended Hikes: 3</h3>
       </div>
-      <div className="flex grid grid-cols-1 xl:grid-cols-2 gap-[16px]">
-        <div className="flex flex-col items-center gap-[24px] sm:order-2 xl:order-1">
+      <div className="flex grid grid-cols-1 lg:grid-cols-2 gap-[16px]">
+        <div className="flex flex-col items-center lg:items-end gap-[24px] order-2 lg:order-1">
           {hikes.map((hike, index) => (
             <HikeCard key={index} post={hike} />
           ))}
         </div>
-        <div className="flex flex-col items-center gap-[24px] sm:order-1 xl:order-2">
-          <div className="w-sm rounded overflow-hidden shadow-md bg-white">
+        <div className="flex flex-col items-center lg:items-start gap-[24px] order-1 lg:order-2">
+          <div className="w-full lg:w-sm rounded overflow-hidden shadow-md bg-white">
             <img src="/blog/gram.jpeg" alt="me"  />
             <div className="px-6 py-4">Hello trail friends! &#128522;</div>
           </div>
@@ -43,7 +43,7 @@ export default async function Home() {
 
 const HikeCard = ({post}) => {
   return (
-    <div className="w-xl rounded overflow-hidden shadow-md bg-white">
+    <div className="w-full lg:w-xl rounded overflow-hidden shadow-md bg-white">
       <img src={post.metadata.img} alt={post.metadata.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl">{post.metadata.title}</div>
@@ -57,7 +57,7 @@ const HikeCard = ({post}) => {
 
 const PostCard = ({post}) => {
   return (
-    <div className="w-sm rounded overflow-hidden shadow-md bg-white">
+    <div className="w-full lg:w-sm rounded overflow-hidden shadow-md bg-white">
       <div className="px-6 py-4">
         <ReactMarkdown remarkPlugins={[remarkEmoji]}>{post.content}</ReactMarkdown>
       </div>
