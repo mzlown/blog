@@ -20,7 +20,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <div>
       <Header />
-      <div className='px-[16px] py-[8px]'>
+      <div className='px-[16px] py-[8px] w-full lg:w-[1024px] m-auto'>
         <h1>{post.metadata.title}</h1>
         <h2>{post.metadata.date}</h2>
         <ReactMarkdown remarkPlugins={[remarkEmoji]}>{post.content}</ReactMarkdown>
