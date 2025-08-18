@@ -17,7 +17,7 @@ export default async function Home() {
       <div className="flex flex-col gap-[8px] m-auto justify-center items-center mb-[24px]">
         <h1>Welcome to Trail Snackers</h1>
         <p>Where you come on adventures with me!</p>
-        <h3>Recommended Hikes: 3</h3>
+        <h2>Recommended Hikes: {hikes.length}</h2>
       </div>
       <div className="flex grid grid-cols-1 lg:grid-cols-2 gap-[16px]">
         <div className="flex flex-col items-center lg:items-end gap-[24px] order-2 lg:order-1">
@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col items-center lg:items-start gap-[24px] order-1 lg:order-2">
           <div className="w-full lg:w-sm rounded overflow-hidden shadow-md bg-white">
-            <img src="/hikes/gram.jpeg" alt="me"  />
+            <img src="/me.jpg" alt="me"  />
             <div className="px-6 py-4">Hello trail friends! &#128522;</div>
           </div>
           <div className="flex flex-col items-center gap-[24px]">

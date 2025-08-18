@@ -5,9 +5,9 @@ summary: "This is a a picture of me on a hike at gram trail..."
 img: "/hikes/gram.jpeg"
 ---
 
-**Hike**: Gram Trail
+# Gram Trail
 
-**Likes**: :sunny: :sunny: :sunny: :sunny:
+# Likes: :sunny: :sunny: :sunny: :sunny:
 
 ![Gram Trail](/hikes/gram.jpeg)
 

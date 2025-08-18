@@ -5,9 +5,9 @@ summary: "This is the summary"
 img: "/hikes/gram.jpeg"
 ---
 
-**Hike**: Name of hike
+# Mount Diablo
 
-**Likes**: :sunny: :sunny: :sunny: :sunny:
+# Likes: :sunny: :sunny: :sunny: :sunny:
 
 ![Mount Diablo](/hikes/gram.jpeg)
 
