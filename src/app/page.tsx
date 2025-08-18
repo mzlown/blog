@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col items-center lg:items-start gap-[24px] order-1 lg:order-2">
           <div className="w-full lg:w-sm rounded overflow-hidden shadow-md bg-white">
-            <img src="/blog/gram.jpeg" alt="me"  />
+            <img src="/hikes/gram.jpeg" alt="me"  />
             <div className="px-6 py-4">Hello trail friends! &#128522;</div>
           </div>
           <div className="flex flex-col items-center gap-[24px]">
