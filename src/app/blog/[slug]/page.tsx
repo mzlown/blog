@@ -1,6 +1,7 @@
 
 import { getPostBySlug, getPostSlugs } from '@/lib/markdown';
 import ReactMarkdown from 'react-markdown';
+import remarkEmoji from 'remark-emoji';
 import Header from '../../../components/header';
 
 type Props = {
@@ -22,7 +23,7 @@ export default async function BlogPostPage({ params }: Props) {
             <div className='px-[16px] py-[8px]'>
                 <h1>{post.metadata.title}</h1>
                 <h2>{post.metadata.date}</h2>
-                <ReactMarkdown>{post.content}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkEmoji]}>{post.content}</ReactMarkdown>
             </div>
         </div>
     );
