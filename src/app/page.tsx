@@ -49,7 +49,11 @@ const HikeCard = ({post}) => {
         <div className="font-bold text-xl">{post.metadata.title}</div>
         <div className="font-bold text-lg mb-2">{post.metadata.date}</div>
         <p className="text-base mb-4">{post.metadata.summary}</p>
-        <Link className="btn" href={`hikes/${post.slug}`}>Read More</Link>
+        <Link href={`hikes/${post.slug}`}>
+          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            Read More
+          </button>
+        </Link>
       </div>
     </div>
   );

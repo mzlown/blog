@@ -2,6 +2,7 @@
 import { getHikeBySlug, getHikeSlugs } from '@/lib/markdown';
 import ReactMarkdown from 'react-markdown';
 import remarkEmoji from 'remark-emoji';
+import rehypeRaw from "rehype-raw";
 import Header from '../../../components/header';
 
 type Props = {
@@ -20,7 +21,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <div>
       <div className='px-[16px] py-[8px] w-full lg:w-[1024px] m-auto'>
-        <ReactMarkdown remarkPlugins={[remarkEmoji]}>{post.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkEmoji]} rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
       </div>
     </div>
   );
