@@ -5,13 +5,13 @@ import remarkEmoji from 'remark-emoji';
 import rehypeRaw from "rehype-raw";
 import Header from '../../../components/header';
 
-type Props = {
-  params: { slug: string };
-};
-
 export async function generateStaticParams() {
   const slugs = await getHikeSlugs();
   return slugs.map((slug) => ({ slug }));
+}
+
+interface Props {
+  params: Promise<{ slug: string }>;
 }
 
 export default async function BlogPostPage({ params }: Props) {
