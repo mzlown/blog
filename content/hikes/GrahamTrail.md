@@ -5,7 +5,7 @@ summary: "This is a a picture of me on a hike at graham trail..."
 img: "/hikes/graham.jpg"
 ---
 
-# Gram Trail
+# Graham Trail
 
 # Likes: :sunny: :sunny: :sunny: :sunny:
 
