@@ -12,8 +12,15 @@ export default async function Home() {
   const postSlugs = await getPostSlugs();
   const posts = await Promise.all(postSlugs.map((slug) => getPostBySlug(slug)));
 
+  const tags = [...new Set(hikes.map(hike => hike.metadata.tags).flat())].sort();
+
+  // todo: keep track of which tags are selected 
+  //       selected tags should be a different color/shade 
+  //       button to clear selected tags 
+  //       show tags that belong to each hike 
+
   return (
-    <div className="bg-[#f1f1f1] px-[16px] py-[16px]">
+    <div className="bg-[#f1f1f1] px-[16px] py-[16px] dark:text-black">
       <div className="flex flex-col gap-[8px] m-auto justify-center items-center mb-[24px]">
         <h1>Welcome to Trail Snackers</h1>
         <p>Where you come on adventures with me!</p>
