@@ -3,6 +3,7 @@ title: "Mount Diablo"
 date: "2025-08-01"
 summary: "on my hike at Mount Diablo I did not reach the summit I turned around at the half way point along with my friend,dad,and brother but..."
 img: "/hikes/MountDiablo.jpg"
+tags: ["hike", "steep", "camping", "sunny"]
 ---
 
 # Mount Diablo
