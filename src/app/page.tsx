@@ -1,19 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import Header from "../components/header";
 import Hikes from "@/components/hikes";
 import ReactMarkdown from 'react-markdown';
 import remarkEmoji from 'remark-emoji';
 import { getHikeSlugs, getHikeBySlug, getPostSlugs, getPostBySlug } from '@/lib/markdown';
-import { title } from "process";
 
 export default async function Home() {
   const slugs = await getHikeSlugs();
   const hikes = await Promise.all(slugs.map((slug) => getHikeBySlug(slug)));
   const postSlugs = await getPostSlugs();
   const posts = await Promise.all(postSlugs.map((slug) => getPostBySlug(slug)));
-
-  const tags = [...new Set(hikes.map(hike => hike.metadata.tags).flat())].sort();
 
   return (
     <div className="bg-[#f1f1f1] px-[16px] py-[16px] dark:text-black">

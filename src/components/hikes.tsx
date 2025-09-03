@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 
 const Hikes = ( {hikes} ) => {
-  const allTags = [...new Set(hikes.map(hike => hike.metadata.tags).flat())].sort();
+  const allTags = [...new Set(hikes.map(hike => hike.metadata.tags).flat())].sort() as string[];
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const toggleTag = (tag: string) => {
