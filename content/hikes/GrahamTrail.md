@@ -13,7 +13,7 @@ tags: ["hike", "shade"]
 <img src="/hikes/graham.jpg" className="m-auto w-max-[1024px] my-[16px]"/>
 
 <div className="text-justify mb-[24px]">
-This is a picture of me on a hike the graham trail I am the one in pink. On graham trail I saw lots of trees, and a poisonous spiders web not the spider the web, but must be careful of the bike riders, dogs are allowed though so if you are allergic watch out, it is so pretty I loved it I've gone on the trail twice it was great both times.Bye,and happy hiking!
+This is a picture of me on a hike the graham trail I am the one in pink. On graham trail I saw lots of trees, and a poiseness spiders web not the spider the web, but must be careful of the bike riders, dogs are aloud though so if you are allergic watch out, it is so pretty I loved it i've gone on the trail three times it was great both times.Bye,and happy hiking!
 
 
 Snack of the hike: gummy noodle-y thingies
